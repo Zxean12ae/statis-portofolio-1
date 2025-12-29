@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    Deklarasi font
+*/
+@font-face {
+    font-family: 'Poppins-semibold';
+    src: url('font/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url('font/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-medium';
+    src: url('font/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.h1{
+    font-family: 'Poppins-semibold';
+    font-size: 36px;
+}
+.h2{
+    font-family: 'Poppins-semibold';
+    font-size: 32px;
+}
+.h3{
+    font-family: 'Poppins-semibold';
+    font-size: 28px;
+}
+.h4{
+    font-family: 'Poppins-semibold';
+    font-size: 24px;
+}
+.h5{
+    font-family: 'Poppins-semibold';
+    font-size: 20px;
+}
+.h6{
+    font-family: 'Poppins-semibold';
+    font-size: 16px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 4%;
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+}
+
+header{
+    padding: 1%;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0%;
+}
+.logo{
+    background-color: rgb(121, 43, 156);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 22px;
+}
+
+header ul li a:hover {
+    border: 1px solid #7456FF;
+    color: #7456FF;
+    border-radius: 3px;
+    text-shadow: 0 0 10px rgba(232, 221, 221, 0.8);
+}
+
+main{
+    padding: 0 1%;
+    flex: 1;
+    max-width: 100%;
+}
+
+p{
+    font-size: 16px;
+    word-break: break-all;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1%;
+    bottom: 10px;
+}
