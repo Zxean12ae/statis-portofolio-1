@@ -25,9 +25,15 @@
     font-style: normal;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, p{
+    color: white;
+}
+.nama-h1{
+    color: #7456FF;
+    padding-left: 10px;
+}
 
-
-.h1{
+.h1, .nama-h1{
     font-family: 'Poppins-semibold';
     font-size: 36px;
 }
@@ -51,7 +57,12 @@
     font-family: 'Poppins-semibold';
     font-size: 16px;
 }
-
+p{
+    font-family: 'Poppins-regular';
+    font-size: 16px;
+    color: #999999;
+    word-break: break-all;
+}
 
 body {
     display: flex;
@@ -72,7 +83,7 @@ header nav{
     padding: 0 0%;
 }
 .logo{
-    background-color: rgb(121, 43, 156);
+    background-color: #7456FF;
     padding: 5%;
     border-radius: 5px;
 }
@@ -87,7 +98,6 @@ header ul {
 header ul li a {
     text-decoration: none;
     border: 1px solid transparent;
-    color: rgb(255, 255, 255);
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
@@ -106,10 +116,25 @@ main{
     flex: 1;
     max-width: 100%;
 }
-
-p{
-    font-size: 16px;
-    word-break: break-all;
+.main-content{
+    margin-top: 100px;
+}
+.main-contet-kanan{
+    max-width: 50%;
+}
+.ucapan{
+    padding-bottom: 50px;
+}
+.ucapan-nama{
+    display: flex;
+}
+.garis-pembatas{
+    width: 70px;
+    height: 2px;
+    background-color: #999999;
+}
+.perkenalan{
+    padding-top: 20px;
 }
 
 footer{
