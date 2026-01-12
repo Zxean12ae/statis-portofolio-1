@@ -18,39 +18,41 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="main-content">
-                <div class="main-contet-kiri">
-                    <div class="ucapan">
-                        <h2 class="h2">Hello Buds</h2>
-                        <div class="ucapan-nama">
-                        <h1 class="h1">I am </h1>
-                        <h1 class="nama-h1">Rahmat Fairuz Zuhry</h1>
-                    </div>
-                    <p>UI / UX Design and Programmer</p>
-                    </div>
-                    <div class="garis-pembatas"></div>
-                    <div class="perkenalan">
-                        <p>I'm a person who has a keen interest in the design layout. I think presenting an attractive design is a matter of concern in developing a branding of products. To creates a good design,  I focus on proper composition and visual decoration details in order to make it more professional. For the time being, I’m developing the skill for acquiring the UI/UX design for dynamic application and web development.</p>
-                        <div class="btn-grid">
-                            <button class="button"><h6 class="h6">Learn More</h6></button>
-                            <button class="button"><h6 class="h6">awawa</h6></button>
-                        </div>
-                    </div>
+        <main class="main-content">
+            <div class="main-contet-kiri">
+                <div class="ucapan">
+                    <h2 class="h2">Hello Buds</h2>
+                    <div class="ucapan-nama">
+                    <h1 class="h1">I am </h1>
+                    <h1 class="nama-h1">Rahmat Fairuz Zuhry</h1>
                 </div>
-                <div class="main-content-kanan">
-                    <img src="images/photo.png" alt="foto" class="foto">
-                    <div>
-                        <h6 class="h6">Find Me On</h6>
-                        <a href="#"><img src="images/icon_facebook.png" alt="facebook" class="icon"></a>
-                        <a href="#"><img src="images/icon_instagram.png" alt="instagram" class="icon"></a>
-                        <a href="#"><img src="images/icon_linkdin.png" alt="linkdin" class="icon"></a>
+                <p>UI / UX Design and Programmer</p>
+                </div>
+                <div class="garis-pembatas"></div>
+                <div class="perkenalan">
+                    <p>I'm a person who has a keen interest in the design layout. I think presenting an attractive design is a matter of concern in developing a branding of products. To creates a good design,  I focus on proper composition and visual decoration details in order to make it more professional. For the time being, I’m developing the skill for acquiring the UI/UX design for dynamic application and web development.</p>
+                    <div class="btn-grid">
+                        <button class="button"><h6 class="h6">Learn More</h6></button>
+                        <button class="button"><h6 class="h6">awawa</h6></button>
                     </div>
                 </div>
             </div>
+            <div class="main-content-kanan">
+                <img src="images/photo.png" alt="foto" class="foto">
+                <div>
+                    <h6 class="h6">Find Me On</h6>
+                    <a href="#"><img src="images/icon_facebook.png" alt="facebook" class="icon"></a>
+                    <a href="https://www.instagram.com/rahmatfz27/" target="_blank"><img src="images/icon_instagram.png" alt="instagram" class="icon"></a>
+                    <a href="https://www.linkedin.com/in/rahmat-fairuz-zuhry-2b62382a2/" target="_blank"><img src="images/icon_linkdin.png" alt="linkdin" class="icon"></a>
+                </div>
+            </div>
         </main>
+        <div class="content">
+            
+        </div>
+        <div class="project" id="project"><p>aaaaaaaaaaa</p></div>
         <footer>
-            <nav>
+            <nav id="footer">
                 <div class="informasi">
                     <h2 class="h2" style="padding-bottom: 35px;">Get In Touch</h2>
                     <p>For business and partnership inquiry please contact me below!</p>
@@ -81,6 +83,21 @@
                 </div>
             </nav>
         </footer>
+        <script src="https://cdn.jsdelivr.net/gh/adryd325/oneko.js@main/oneko-ie6.js"></script>
+        <script>
+        (function() {
+            const fixNeko = setInterval(() => {
+            const nekoEl = document.getElementById("oneko");
+            if (nekoEl) {
+                nekoEl.style.backgroundImage = "url('https://raw.githubusercontent.com/adryd325/oneko.js/main/oneko.gif')";
+                const originalFrame = window.onekoInterval; 
+                nekoEl.style.zIndex = "999999";
+                clearInterval(fixNeko);
+            }
+            }, 100);
+        })();
+        </script>
     </body>
 </html>
 <link rel="stylesheet" href="style.css">
+<link rel="uneko" href="uneko.js">

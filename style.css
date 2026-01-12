@@ -25,7 +25,7 @@
     font-style: normal;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, p{
+.h1, .h2, .h3, .h4, .h5, .h6{
     color: white;
 }
 .nama-h1{
@@ -61,16 +61,17 @@ p{
     font-family: 'Poppins-regular';
     font-size: 16px;
     color: #999999;
-    word-break: break-all;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     margin: 0 0;
     background-color: #0c0c0c;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 header{
@@ -102,6 +103,7 @@ header ul li a {
     cursor: pointer;
     transition: 0.3s;
     padding: 10px 22px;
+    transition-duration: 0.5s;
 }
 
 header ul li a:hover {
@@ -114,12 +116,10 @@ header ul li a:hover {
 main{
     margin: 0 4%;
     padding: 0 1%;
-    flex: 1;
-    max-width: 100%;
-}
-.main-content{
-    margin-top: 100px;
+    min-height: 100vh;
     display: flex;
+    align-items: center;
+    width: 100%;
 }
 .main-contet-kiri{
     flex: 1;
@@ -165,8 +165,10 @@ main{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 .button:hover{
+    box-shadow: 0 0 20px 3px #898585;
     background-color: #7456FF;
     border: 2px solid #7456FF;
 }
@@ -186,6 +188,11 @@ main{
     width: 75%;
     height: auto;
 }
+.content, .project{
+    padding: 1%;
+    margin: 0 4%;
+}
+
 
 footer{
     background-color: #0F0F0F;
@@ -213,4 +220,10 @@ footer nav{
 }
 .hiasan{
     justify-content: center;
+}
+
+#oneko {
+    position: fixed;
+    image-rendering: pixelated;
+    pointer-events: none; 
 }
